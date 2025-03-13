@@ -1,0 +1,25 @@
+{
+  "name": "@hyk-see/performance",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "module": "dist/index.esm.js",
+  "publishConfig": {
+    "main": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "hyksee",
+    "performance"
+  ],
+  "dependencies": {
+    "@hyk-see/common": "workspace:*",
+    "@hyk-see/utils": "workspace:*",
+    "web-vitals": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyksee/hyksee.git"
+  }
+}

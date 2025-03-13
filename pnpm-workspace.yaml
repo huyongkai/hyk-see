@@ -1,0 +1,3 @@
+# pnpm-workspace.yaml
+packages:
+  - "packages/*" # 指定所有子包都位于 packages 目录下

@@ -1,0 +1,12 @@
+{
+  "name": "@hyk-see/utils",
+  "version": "1.0.0",
+  "private": true,
+  "sideEffects": false,
+  "main": "src/index.js",
+  "dependencies": {
+    "ua-parser-js": "1.0.32",
+    "@hyk-see/common": "workspace:*",
+    "@hyk-see/core": "workspace:*"
+  }
+}

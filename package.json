@@ -1,0 +1,62 @@
+{
+  "name": "hyk-see",
+  "private": true,
+  "description": "前端监控SDK，可用来收集并上报：代码报错、性能数据、用户行为、加载资源、个性化指标等数据",
+  "keywords": [
+    "hyksee",
+    "monitor",
+    "performance",
+    "error-tracking"
+  ],
+  "author": "hyksee",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "commit": "git-cz",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "publish": "changeset publish",
+    "release": "pnpm run build && pnpm run version && pnpm run publish"
+  },
+  "dependencies": {
+    "core-js": "^3.19.1",
+    "error-stack-parser": "^2.1.4",
+    "path-to-regexp": "^6.2.0",
+    "tslib": "^2.4.1",
+    "ua-parser-js": "^1.0.32",
+    "web-vitals": "^3.1.0"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0",
+    "@commitlint/cz-commitlint": "^17.0.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.0",
+    "@rollup/plugin-commonjs": "^23.0.3",
+    "@rollup/plugin-json": "^5.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-uglify": "^1.0.0",
+    "eslint": "^8.29.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.0",
+    "rollup": "^2.78.0"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,json}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyksee/hyksee.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
+}

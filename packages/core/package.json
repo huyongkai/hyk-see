@@ -1,0 +1,27 @@
+{
+  "name": "@hyk-see/core",
+  "version": "1.0.0",
+  "description": "hyksee core",
+  "main": "src/index.js",
+  "module": "dist/index.esm.js",
+  "publishConfig": {
+    "main": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "hyk-see",
+    "core"
+  ],
+  "author": "hyk-see",
+  "license": "ISC",
+  "dependencies": {
+    "@hyk-see/utils": "workspace:*",
+    "@hyk-see/common": "workspace:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyksee/hyksee.git"
+  }
+}
