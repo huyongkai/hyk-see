@@ -1,5 +1,11 @@
 # @hyk-see/common
 
+## 5.0.0
+
+### Major Changes
+
+- ddcb38b: utils 进行发包
+
 ## 4.0.0
 
 ### Major Changes

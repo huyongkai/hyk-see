@@ -1,5 +1,17 @@
 # @hyk-see/performance
 
+## 5.0.0
+
+### Major Changes
+
+- ddcb38b: utils 进行发包
+
+### Patch Changes
+
+- Updated dependencies [ddcb38b]
+  - @hyk-see/common@5.0.0
+  - @hyk-see/utils@5.0.0
+
 ## 4.0.0
 
 ### Major Changes
