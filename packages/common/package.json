@@ -1,6 +1,6 @@
 {
   "name": "@hyk-see/common",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": false,
   "main": "src/index.js",
   "module": "dist/index.esm.js",
