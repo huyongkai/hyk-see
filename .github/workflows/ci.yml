@@ -77,7 +77,7 @@ jobs:
         if: success()
         with:
           token: ${{ secrets.CODECOV_TOKEN }} # 如果您的仓库是私有的，需要设置此令牌
-          fail_ci_if_error: true # 如果上传失败，则使 CI 失败
+          fail_ci_if_error: false # 即使上传失败，也不会导致 CI 失败
           verbose: true # 详细输出
 
       # 步骤 12: 缓存构建产物（可选）
