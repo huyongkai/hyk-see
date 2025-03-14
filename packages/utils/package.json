@@ -1,7 +1,7 @@
 {
   "name": "@hyk-see/utils",
   "version": "4.0.0",
-  "private": true,
+  "private": false,
   "main": "src/index.js",
   "module": "dist/index.esm.js",
   "publishConfig": {
