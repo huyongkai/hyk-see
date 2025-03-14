@@ -70,3 +70,7 @@ export function replaceAop(source, name, replacement, isForced = false) {
     }
   }
 }
+
+export function on(target, eventName, handler, options) {
+  target.addEventListener(eventName, handler, options);
+}

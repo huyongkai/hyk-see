@@ -1,0 +1,16 @@
+# 忽略构建输出目录
+dist/
+dist-*/
+coverage/
+*.min.js
+
+# 忽略第三方库
+node_modules/
+vendor/
+
+# 忽略配置文件
+*.config.js
+.eslintrc.js
+
+# 忽略其他不需要 lint 的文件
+*.d.ts 
