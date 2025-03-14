@@ -1,7 +1,17 @@
 {
   "name": "@hyk-see/common",
   "version": "1.0.0",
-  "private": true,
-  "sideEffects": false,
-  "main": "src/index.js"
+  "private": false,
+  "main": "src/index.js",
+  "module": "dist/index.esm.js",
+  "publishConfig": {
+    "main": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huyongkai/hyk-see"
+  }
 }
