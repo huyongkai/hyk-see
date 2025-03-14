@@ -1,6 +1,6 @@
 {
   "name": "@hyk-see/performance",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "main": "src/index.js",
   "module": "dist/index.esm.js",
   "publishConfig": {

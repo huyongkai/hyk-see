@@ -1,6 +1,6 @@
 {
   "name": "@hyk-see/core",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "hyksee core",
   "main": "src/index.js",
   "module": "dist/index.esm.js",
