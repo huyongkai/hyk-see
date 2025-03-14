@@ -1,0 +1,77 @@
+# 依赖目录
+node_modules/
+.pnpm-store/
+
+# 构建输出
+dist/
+packages/*/dist/
+lib/
+es/
+umd/
+
+# 日志文件
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 编辑器目录和文件
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+.history/
+
+# 测试覆盖率报告
+coverage/
+.nyc_output/
+
+# 环境变量文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 临时文件
+.tmp/
+.temp/
+.cache/
+
+# 类型声明生成文件
+*.d.ts
+!types/*.d.ts
+
+# 特定于操作系统的文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 打包文件
+*.tgz
+*.zip
+*.tar.gz
+
+# 调试文件
+.debug/
+
+# 本地配置文件
+.npmrc
+.yarnrc
+.pnpmrc
+.npmrc.local
+
+# 锁定文件 (可选，取决于您的团队策略)
+# package-lock.json
+# yarn.lock
+# 通常保留 pnpm-lock.yaml
+
+# Rollup 缓存
+.rollup.cache/
