@@ -1,5 +1,19 @@
 # @hyk-see/core
 
+## 3.0.0
+
+### Major Changes
+
+- 7e33a64: 添加权限配置
+- 0b1c642: 本地测试release.yml
+
+### Patch Changes
+
+- Updated dependencies [7e33a64]
+- Updated dependencies [0b1c642]
+  - @hyk-see/common@3.0.0
+  - @hyk-see/utils@3.0.0
+
 ## 2.0.0
 
 ### Major Changes

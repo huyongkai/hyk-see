@@ -1,5 +1,12 @@
 # @hyk-see/common
 
+## 3.0.0
+
+### Major Changes
+
+- 7e33a64: 添加权限配置
+- 0b1c642: 本地测试release.yml
+
 ## 2.0.0
 
 ### Major Changes
