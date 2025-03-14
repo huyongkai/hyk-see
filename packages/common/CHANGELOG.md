@@ -1,5 +1,11 @@
 # @hyk-see/common
 
+## 4.0.0
+
+### Major Changes
+
+- 08242ab: 新增测试文件
+
 ## 3.0.0
 
 ### Major Changes
