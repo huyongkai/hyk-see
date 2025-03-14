@@ -42,4 +42,15 @@ const isBrowserEnv = variableTypeDetection.isWindow(
   typeof window !== "undefined" ? window : undefined
 );
 
+export function supportsHistory() {
+  const chrome = _global.chrome;
+  const isChromePackagedApp = chrome && chrome.app && chrome.app.runtime;
+  const hasHistoryApi =
+    "history" in _global &&
+    !!_global.history.pushState &&
+    !!_global.history.replaceState;
+
+  return !isChromePackagedApp && hasHistoryApi;
+}
+
 export { _global, _support, isBrowserEnv };

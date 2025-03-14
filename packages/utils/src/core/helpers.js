@@ -74,3 +74,15 @@ export function replaceAop(source, name, replacement, isForced = false) {
 export function on(target, eventName, handler, options) {
   target.addEventListener(eventName, handler, options);
 }
+
+export const throttle = (fn, delay) => {
+  let canRun = true;
+  return function (...args) {
+    if (!canRun) return;
+    fn.apply(this, args);
+    canRun = false;
+    setTimeout(() => {
+      canRun = true;
+    }, delay);
+  };
+};

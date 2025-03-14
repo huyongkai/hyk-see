@@ -11,7 +11,7 @@
     "dist"
   ],
   "dependencies": {
-    "ua-parser-js": "1.0.32",
+    "ua-parser-js": "1.0.35",
     "@hyk-see/common": "workspace:*",
     "@hyk-see/core": "workspace:*"
   },

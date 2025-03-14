@@ -36,3 +36,7 @@ export function isError(error) {
       return false;
   }
 }
+
+export function isExistProperty(obj, key) {
+  return Object.prototype.hasOwnProperty.call(obj, key);
+}
