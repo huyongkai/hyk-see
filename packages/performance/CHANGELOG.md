@@ -1,5 +1,17 @@
 # @hyk-see/performance
 
+## 4.0.0
+
+### Major Changes
+
+- 08242ab: 新增测试文件
+
+### Patch Changes
+
+- Updated dependencies [08242ab]
+  - @hyk-see/common@4.0.0
+  - @hyk-see/utils@4.0.0
+
 ## 3.0.0
 
 ### Major Changes
