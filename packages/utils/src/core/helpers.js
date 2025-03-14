@@ -1,5 +1,9 @@
 import { variableTypeDetection } from "./verifyType";
 
+export function typeofAny(target) {
+  return Object.prototype.toString.call(target).slice(8, -1).toLowerCase();
+}
+
 export function validateOptions(target, targetName, expectType) {
   if (!target) return false;
 
@@ -47,8 +51,8 @@ export function unknownToString(target) {
 export function interceptStr(str, length) {
   if (variableTypeDetection.isString(str)) {
     return (
-      str.slice(0, interceptLength) +
-      (str.length > interceptLength ? `:截取前${interceptLength}个字符` : "")
+      str.slice(0, length) +
+      (str.length > length ? `:截取前${length}个字符` : "")
     );
   }
 

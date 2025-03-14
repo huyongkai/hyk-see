@@ -7,10 +7,14 @@ import {
   parseUrlToObj,
   unknownToString,
 } from "@hyk-see/utils";
-import { breadcrumb } from "./breadcrumb";
-import { options } from "./options";
-import { transportData } from "./reportData";
-import { openWhiteScreen } from "./whiteScreen";
+import {
+  breadcrumb,
+  options,
+  transportData,
+  openWhiteScreen,
+  httpTransform,
+  resourceTransform,
+} from "./index";
 
 export const HandleEvents = {
   // 处理 xhr fetch 回调
@@ -62,7 +66,7 @@ export const HandleEvents = {
       // 在用户的一次会话中，如果产生了同一个错误，那么将这同一个错误上报多次是没有意义的；
       // 在用户的不同会话中，如果产生了同一个错误，那么将不同会话中产生的错误进行上报是有意义的.
       const hash = getErrorUid(
-        `${EVENTTYPES.ERROR}-${ev.message}-${fileName}-${columnNumber}`
+        `${EVENTTYPES.ERROR}-${event.message}-${fileName}-${columnNumber}`
       );
       // 开启 repeatCodeError 第一次报错才上报
       if (

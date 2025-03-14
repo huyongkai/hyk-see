@@ -1,4 +1,4 @@
-import { getFlag, setFlag } from "@hyk-see/utils";
+import { getFlag, setFlag, nativeTryCatch } from "@hyk-see/utils";
 
 const handlers = {};
 
@@ -21,7 +21,7 @@ export function notify(type, data) {
     nativeTryCatch(
       () => cb(data),
       () => {
-        console.error("notify error", error);
+        console.error("notify error");
       }
     );
   });

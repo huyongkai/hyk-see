@@ -1,5 +1,5 @@
 import { EVENTTYPES, BREADCRUMBTYPES } from "@hyk-see/common";
-import { getTimestamp, _support } from "@hyk-see/utils";
+import { getTimestamp, _support, validateOptions } from "@hyk-see/utils";
 
 // 创建用户行为类
 export class Breadcrumb {

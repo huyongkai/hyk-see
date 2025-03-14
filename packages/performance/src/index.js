@@ -6,11 +6,10 @@ export default class Performance {
   type = "";
 
   constructor() {
-    super(EVENTTYPES.PERFORMANCE);
     this.type = EVENTTYPES.PERFORMANCE;
   }
 
-  bindOptions(options) {}
+  bindOptions() {}
 
   core({ transportData }) {
     // 获取 FCP, LCP, TTFB, FID 等指标

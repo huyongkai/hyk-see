@@ -11,7 +11,6 @@ import {
 } from "./core/index";
 import { _global, getFlag, setFlag, nativeTryCatch } from "@hyk-see/utils";
 import { SDK_VERSION, SDK_NAME, EVENTTYPES } from "@hyk-see/common";
-import { BasePlugin } from "./plugin/index";
 
 function install(Vue, options) {
   if (getFlag(EVENTTYPES.VUE)) return;
@@ -61,12 +60,4 @@ function use(plugin, option) {
   });
 }
 
-export default {
-  install,
-  use,
-  log,
-  init,
-  SDK_VERSION,
-  SDK_NAME,
-  BasePlugin,
-};
+export { install, use, log, init, SDK_VERSION, SDK_NAME };

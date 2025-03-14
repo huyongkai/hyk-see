@@ -99,7 +99,7 @@ function getFirstScreenPaint(callback) {
 export function observeFirstScreenPaint(callback) {
   // 忽略样式、脚本等非内容标签
   const ignoreDOMList = ["STYLE", "SCRIPT", "LINK"];
-  observe = new MutationObserver((mutationList) => {
+  observer = new MutationObserver((mutationList) => {
     checkDOMChange(callback);
     const entry = { children: [], startTime: 0 };
     for (const mutation of mutationList) {

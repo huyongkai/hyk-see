@@ -56,7 +56,7 @@ export class Options {
   }
 }
 
-const options = _support.options || (_support.options = new Options());
+export const options = _support.options || (_support.options = new Options());
 
 export function handleOptions(initOptions) {
   setSilentFlag(initOptions);

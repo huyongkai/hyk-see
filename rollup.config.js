@@ -2,7 +2,7 @@ import resolve from "@rollup/plugin-node-resolve"; // 解析第三方依赖
 import commonjs from "@rollup/plugin-commonjs"; // 将 CommonJS 模块转换为 ES6 模块
 import terser from "@rollup/plugin-terser"; // 替换 uglify
 import json from "@rollup/plugin-json"; // 支持导入 JSON 文件
-import visualizer from "@rollup/plugin-visualizer"; // 添加性能分析插件
+import { visualizer } from "rollup-plugin-visualizer"; // 添加性能分析插件
 
 import fs from "fs";
 import path from "path";
